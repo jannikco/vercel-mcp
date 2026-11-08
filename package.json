@@ -1,21 +1,38 @@
 {
   "name": "vercel-mcp",
-  "version": "0.2.0",
-  "description": "Review deployments and create an approved Vercel project. Read provider data first, then explicitly approve the selected change with operator write opt-in and a unique per-call approval key.",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "description": "Use Vercel with AI agents through one PipMCP API key, actual hosted schemas and governed execution.",
   "engines": {
     "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.mjs"
+    }
   },
   "bin": {
     "vercel-mcp": "server.mjs"
   },
   "scripts": {
     "start": "node example.mjs",
+    "doctor": "node doctor.mjs",
     "server": "node server.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.4.0"
-  }
+  },
+  "files": [
+    "lib",
+    "server.mjs",
+    "doctor.mjs",
+    "example.mjs",
+    "README.md",
+    "LICENSE",
+    "capabilities.json",
+    "docs"
+  ]
 }

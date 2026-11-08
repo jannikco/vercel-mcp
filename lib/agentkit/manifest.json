@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-vercel",
+      "description": "Connect AI agents to Vercel using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-vercel/SKILL.md": "2de1bc5fc11aa0bee3641f1f3e5d214f69e716fc1758e811f9f8e958521cc361"
+  }
+}
